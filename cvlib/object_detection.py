@@ -4,7 +4,6 @@ import os
 import numpy as np
 from .utils import download_file
 #import serial
-from playsound import playsound
 import threading
 
 
@@ -170,5 +169,3 @@ def detect_common_objects(image, confidence=0.5, nms_thresh=0.3):
 
     return bbox, label, conf
 
-def play_sound():
-    playsound('sound/alarm.mp3')
